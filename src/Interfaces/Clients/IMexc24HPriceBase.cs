@@ -48,5 +48,5 @@ public interface IMexc24HPrice : IMexcMiniTick
     /// <summary>
     /// The amount of trades made in the last 24 hours
     /// </summary>
-    long TotalTrades { get; set; }
+    long? TotalTrades { get; set; }
 }

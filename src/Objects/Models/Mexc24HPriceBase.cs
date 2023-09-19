@@ -77,5 +77,5 @@ public abstract class Mexc24HPriceBase : IMexc24HPrice
     /// The amount of trades made in the last 24 hours
     /// </summary>
     [JsonProperty("count")]
-    public long TotalTrades { get; set; }
+    public long? TotalTrades { get; set; }
 }
