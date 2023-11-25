@@ -1,4 +1,7 @@
-﻿using Mexc.Net.Interfaces.Clients;
+﻿using System;
+using CryptoExchange.Net.Converters;
+using Mexc.Net.Interfaces.Clients;
+using Newtonsoft.Json;
 
 namespace Mexc.Net.Objects.Models;
 

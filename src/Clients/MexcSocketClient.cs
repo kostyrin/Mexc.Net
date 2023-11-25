@@ -1,8 +1,11 @@
-﻿using Mexc.Net.Clients.SpotApi;
+﻿using System;
+using CryptoExchange.Net;
+using Mexc.Net.Clients.SpotApi;
 using Mexc.Net.Interfaces.Clients;
 using Mexc.Net.Interfaces.Clients.SpotApi;
 using Mexc.Net.Objects;
 using Mexc.Net.Objects.Options;
+using Microsoft.Extensions.Logging;
 
 namespace Mexc.Net.Clients;
 

@@ -1,6 +1,9 @@
-﻿using Mexc.Net.Converters;
+﻿using System;
+using CryptoExchange.Net.Converters;
+using Mexc.Net.Converters;
 using Mexc.Net.Enums;
 using Mexc.Net.Interfaces;
+using Newtonsoft.Json;
 
 namespace Mexc.Net.Objects.Models.Spot.Socket;
 

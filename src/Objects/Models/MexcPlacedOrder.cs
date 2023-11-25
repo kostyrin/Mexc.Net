@@ -1,4 +1,8 @@
-﻿namespace Mexc.Net.Objects.Models;
+﻿using System;
+using CryptoExchange.Net.Converters;
+using Newtonsoft.Json;
+
+namespace Mexc.Net.Objects.Models;
 
 public class MexcPlacedOrder : MexcOrderBase
 {

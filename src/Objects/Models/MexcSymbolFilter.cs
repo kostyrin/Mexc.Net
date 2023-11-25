@@ -1,5 +1,6 @@
 ﻿using Mexc.Net.Converters;
 using Mexc.Net.Enums;
+using Newtonsoft.Json;
 
 namespace Mexc.Net.Objects.Models;
 
