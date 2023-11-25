@@ -1,4 +1,8 @@
-﻿using Mexc.Net.Enums;
+﻿using System;
+using System.Collections.Generic;
+using CryptoExchange.Net.Converters;
+using Mexc.Net.Enums;
+using Newtonsoft.Json;
 
 namespace Mexc.Net.Objects.Models;
 

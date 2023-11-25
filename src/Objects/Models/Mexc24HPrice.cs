@@ -1,4 +1,5 @@
 ﻿using Mexc.Net.Interfaces.Clients;
+using Newtonsoft.Json;
 
 namespace Mexc.Net.Objects.Models;
 

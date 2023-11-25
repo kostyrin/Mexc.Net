@@ -1,4 +1,7 @@
 ﻿using CryptoExchange.Net.Attributes;
+using CryptoExchange.Net.Converters;
+using Newtonsoft.Json;
+
 namespace Mexc.Net.Enums;
 
 /// <summary>

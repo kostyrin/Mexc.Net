@@ -1,4 +1,6 @@
-﻿namespace Mexc.Net.Objects.Core;
+﻿using Newtonsoft.Json;
+
+namespace Mexc.Net.Objects.Core;
 
 /// <summary>
 /// Rest API response

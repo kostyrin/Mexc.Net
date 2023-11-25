@@ -1,4 +1,6 @@
-﻿using Mexc.Net.Objects.Models;
+﻿using System;
+using System.Collections.Generic;
+using Mexc.Net.Objects.Models;
 
 namespace Mexc.Net.Interfaces;
 

@@ -1,4 +1,7 @@
-﻿namespace Mexc.Net.Objects.Internal;
+﻿using System;
+using Newtonsoft.Json;
+
+namespace Mexc.Net.Objects.Internal;
 
 internal class MexcSocketRequest
 {

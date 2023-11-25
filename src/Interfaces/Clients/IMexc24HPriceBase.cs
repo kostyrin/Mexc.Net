@@ -1,4 +1,6 @@
-﻿namespace Mexc.Net.Interfaces.Clients;
+﻿using System;
+
+namespace Mexc.Net.Interfaces.Clients;
 
 /// <summary>
 /// 24 hour price stats

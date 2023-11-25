@@ -1,4 +1,7 @@
-﻿namespace Mexc.Net.Converters;
+﻿using System;
+using Newtonsoft.Json;
+
+namespace Mexc.Net.Converters;
 
 internal class InterfaceConverter<TImp> : JsonConverter
 {

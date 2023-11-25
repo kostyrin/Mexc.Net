@@ -1,4 +1,6 @@
-﻿namespace Mexc.Net.Objects.Core;
+﻿using CryptoExchange.Net.Objects;
+
+namespace Mexc.Net.Objects.Core;
 
 /// <summary>
 /// API error

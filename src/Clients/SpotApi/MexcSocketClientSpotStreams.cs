@@ -1,4 +1,13 @@
-﻿using CryptoExchange.Net.Sockets;
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using CryptoExchange.Net;
+using CryptoExchange.Net.Authentication;
+using CryptoExchange.Net.Objects;
+using CryptoExchange.Net.Sockets;
 using Mexc.Net.Converters;
 using Mexc.Net.Enums;
 using Mexc.Net.Interfaces.Clients.SpotApi;
@@ -7,6 +16,9 @@ using Mexc.Net.Objects.Internal;
 using Mexc.Net.Objects.Models;
 using Mexc.Net.Objects.Models.Spot.Socket;
 using Mexc.Net.Objects.Options;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Mexc.Net.Clients.SpotApi;
 
@@ -77,7 +89,7 @@ public class MexcSocketClientSpotStreams : SocketApiClient, IMexcSocketClientSpo
         {
             Method = "SUBSCRIPTION",
             Params = topics.ToArray(),
-            Id = CryptoExchange.Net.ExchangeHelpers.NextId()
+            Id = ExchangeHelpers.NextId()
         };
 
         return await SubscribeAsync(url, request, null, false, onData, ct);

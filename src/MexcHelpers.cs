@@ -1,10 +1,11 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using System;
+using Microsoft.Extensions.DependencyInjection;
 using System.Net;
+using System.Net.Http;
+using System.Text.RegularExpressions;
 using Mexc.Net.Objects.Options;
 using Mexc.Net.Clients;
 using Mexc.Net.Interfaces.Clients;
-using Mexc.Net.Interfaces.Clients.SpotApi;
-using Mexc.Net.Clients.SpotApi;
 
 namespace Mexc.Net;
 
@@ -22,7 +23,18 @@ public static class MexcHelpers
     {
         return Array.IndexOf(values, @this) == -1;
     }
+    /// <summary>
+    /// Validate the string is a valid Mexc symbol.
+    /// </summary>
+    /// <param name="symbolString">string to validate</param> 
+    public static void ValidateMexcSymbol(this string symbolString)
+    {
+        if (string.IsNullOrEmpty(symbolString))
+            throw new ArgumentException("Symbol is not provided");
 
+        if(!Regex.IsMatch(symbolString, "^([A-Z|a-z|0-9]{5,})$"))
+            throw new ArgumentException($"{symbolString} is not a valid Mexc symbol. Should be [BaseAsset][QuoteAsset], e.g. BTCUSDT");
+    }
     /// <summary>
     /// Add the IMexcClient and IMexcSocketClient to the sevice collection so they can be injected
     /// </summary>

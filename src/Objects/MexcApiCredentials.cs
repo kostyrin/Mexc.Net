@@ -1,4 +1,9 @@
-﻿using System.Text;
+﻿using System.IO;
+using System.Security;
+using System.Text;
+using CryptoExchange.Net;
+using CryptoExchange.Net.Authentication;
+using Newtonsoft.Json.Linq;
 
 namespace Mexc.Net.Objects;
 

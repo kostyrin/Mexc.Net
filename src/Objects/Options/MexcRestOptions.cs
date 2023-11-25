@@ -1,5 +1,5 @@
-﻿using CryptoExchange.Net.Objects.Options;
-using Mexc.Net;
+﻿using System;
+using CryptoExchange.Net.Objects.Options;
 
 namespace Mexc.Net.Objects.Options;
 
@@ -16,6 +16,11 @@ public class MexcRestOptions : RestExchangeOptions<MexcEnvironment, MexcApiCrede
         Environment = MexcEnvironment.Live
     };
 
+    /// <summary>
+    /// The default receive window for requests
+    /// </summary>
+    public TimeSpan ReceiveWindow { get; set; } = TimeSpan.FromSeconds(5);
+    
     /// <summary>
     /// Whether or not to sign public requests
     /// </summary>

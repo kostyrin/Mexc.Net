@@ -1,4 +1,7 @@
-﻿using Mexc.Net.Interfaces;
+﻿using System;
+using System.Collections.Generic;
+using Mexc.Net.Interfaces;
+using Newtonsoft.Json;
 
 namespace Mexc.Net.Objects.Models;
 
