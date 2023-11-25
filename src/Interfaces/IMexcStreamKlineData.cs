@@ -1,4 +1,5 @@
-﻿using Mexc.Net.Enums;
+﻿using System;
+using Mexc.Net.Enums;
 
 namespace Mexc.Net.Interfaces;
 

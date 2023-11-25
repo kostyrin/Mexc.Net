@@ -1,4 +1,9 @@
-﻿namespace Mexc.Net.Objects.Models;
+﻿using System;
+using System.Collections.Generic;
+using CryptoExchange.Net.Converters;
+using Newtonsoft.Json;
+
+namespace Mexc.Net.Objects.Models;
 
 /// <summary>
 /// Exchange info

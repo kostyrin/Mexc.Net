@@ -1,5 +1,4 @@
 ﻿using CryptoExchange.Net.Objects.Options;
-using Mexc.Net;
 
 namespace Mexc.Net.Objects.Options;
 

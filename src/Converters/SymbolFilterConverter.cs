@@ -1,6 +1,9 @@
-﻿using Mexc.Net.Enums;
+﻿using System;
+using Mexc.Net.Enums;
 using Mexc.Net.Objects.Models;
 using System.Diagnostics;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace Mexc.Net.Converters;
 

@@ -1,8 +1,19 @@
-﻿using Mexc.Net.Converters;
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Net.Http;
+using System.Threading;
+using System.Threading.Tasks;
+using CryptoExchange.Net;
+using CryptoExchange.Net.Converters;
+using CryptoExchange.Net.Objects;
+using Mexc.Net.Converters;
 using Mexc.Net.Enums;
 using Mexc.Net.Interfaces.Clients;
 using Mexc.Net.Interfaces.Clients.SpotApi;
 using Mexc.Net.Objects.Models;
+using Newtonsoft.Json;
 
 namespace Mexc.Net.Clients.SpotApi;
 

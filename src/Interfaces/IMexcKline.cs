@@ -1,4 +1,6 @@
-﻿namespace Mexc.Net.Interfaces;
+﻿using System;
+
+namespace Mexc.Net.Interfaces;
 
 /// <summary>
 /// Kline data

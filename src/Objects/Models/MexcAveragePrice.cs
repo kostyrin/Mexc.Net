@@ -1,4 +1,6 @@
-﻿namespace Mexc.Net.Objects.Models;
+﻿using Newtonsoft.Json;
+
+namespace Mexc.Net.Objects.Models;
 
 /// <summary>
 /// Current average price details for a symbol.

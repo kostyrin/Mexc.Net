@@ -1,4 +1,6 @@
-﻿namespace Mexc.Net.Objects.Internal;
+﻿using Newtonsoft.Json;
+
+namespace Mexc.Net.Objects.Internal;
 
 internal class MexcResult<T>
 {

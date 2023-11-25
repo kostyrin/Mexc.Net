@@ -1,4 +1,6 @@
-﻿using Mexc.Net.Enums;
+﻿using System.Collections.Generic;
+using CryptoExchange.Net.Converters;
+using Mexc.Net.Enums;
 
 namespace Mexc.Net.Converters;
 

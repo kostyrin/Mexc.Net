@@ -1,4 +1,8 @@
-﻿namespace Mexc.Net.Objects.Models;
+﻿using CryptoExchange.Net.Converters;
+using CryptoExchange.Net.Interfaces;
+using Newtonsoft.Json;
+
+namespace Mexc.Net.Objects.Models;
 
 /// <summary>
 /// An entry in the order book

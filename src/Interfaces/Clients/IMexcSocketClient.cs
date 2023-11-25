@@ -1,4 +1,6 @@
-﻿namespace Mexc.Net.Interfaces.Clients;
+﻿using CryptoExchange.Net.Interfaces;
+
+namespace Mexc.Net.Interfaces.Clients;
 
 public interface IMexcSocketClient : ISocketClient
 {
